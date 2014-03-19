@@ -1226,16 +1226,16 @@
     "}}}
   endif "}}}
   if count(s:settings.plugin_groups, 'misc') "{{{
-    if exists('$TMUX')
+    if exists('$TMUX') "{{{
       NeoBundle 'christoomey/vim-tmux-navigator'
       NeoBundle 'benmills/vimux'
-    endif
+    endif "}}}
     NeoBundle 'kana/vim-vspec'
     NeoBundleLazy 'tpope/vim-scriptease', {'autoload':{'filetypes':['vim']}}
     NeoBundleLazy 'tpope/vim-markdown', {'autoload':{'filetypes':['markdown']}}
-    if executable('redcarpet') && executable('instant-markdown-d')
+    if executable('redcarpet') && executable('instant-markdown-d') "{{{
       NeoBundleLazy 'suan/vim-instant-markdown', {'autoload':{'filetypes':['markdown']}}
-    endif
+    endif "}}}
     NeoBundleLazy 'guns/xterm-color-table.vim', {'autoload':{'commands':'XtermColorTable'}}
     NeoBundle 'chrisbra/vim_faq'
     NeoBundle 'vimwiki'
@@ -1253,11 +1253,11 @@
     NeoBundle 'gcmt/wildfire.vim'
     NeoBundle 'laurentgoudet/vim-howdoi'
     NeoBundle 't9md/vim-chef'
+    NeoBundleLazy 'dag/vim-fish', {'autoload':{'filetypes':['fish']}}
     NeoBundle 't9md/vim-choosewin' "{{{
       nmap  -  <Plug>(choosewin)
       let g:choosewin_overlay_enable = 1
     "}}}
-    NeoBundleLazy 'dag/vim-fish', {'autoload':{'filetypes':['fish']}}
     NeoBundle 'fmoralesc/vim-pad' "{{{
       let g:pad_dir = "~/Dropbox/Notational Data"
       let g:pad_use_default_mappings = 0
@@ -1396,10 +1396,11 @@
 
   " find current word in quickfix
   nnoremap <leader>fw :execute "vimgrep ".expand("<cword>")." %"<cr>:copen<cr>
+
   " find last search in quickfix
   nnoremap <leader>ff :execute 'vimgrep /'.@/.'/g %'<cr>:copen<cr>
 
- " shortcuts for windows {{{
+ " shortcuts for window handling  {{{
     nnoremap <leader>v <C-w>v<C-w>l
     nnoremap <leader>s <C-w>s
     nmap <leader>z <Plug>ZoomWin
@@ -1432,6 +1433,7 @@
 
   " Open markdown files in Marked
   nnoremap <leader>md :silent !open -a Marked.app '%:p'<cr>
+
   " general
   nmap <leader>l :set list! list?<cr>
   nnoremap <BS> :set hlsearch! hlsearch?<cr>
@@ -1463,9 +1465,7 @@
       \  exe 'normal! g`"zvzz' |
       \ endif
 
-    "autocmd FileType js,scss,css autocmd BufWritePre <buffer> call StripTrailingWhitespace()
     autocmd FileType css,scss setlocal foldmethod=marker foldmarker={,}
-    "autocmd FileType css,scss nnoremap <silent> <leader>S vi{:sort<CR>
     autocmd FileType python setlocal foldmethod=indent tabstop=8 expandtab shiftwidth=4 softtabstop=4
     autocmd FileType markdown setlocal nolist
     autocmd FileType vo_base setlocal nonumber
