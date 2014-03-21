@@ -611,7 +611,7 @@
       nmap <space> [unite]
       nnoremap [unite] <nop>
 
-      nnoremap <silent> [unite]<space> :<C-u>Unite -toggle -auto-resize -buffer-name=mixed file_rec/async buffer file_mru bookmark<cr><c-u>
+      "nnoremap <silent> [unite]<space> :<C-u>Unite -toggle -auto-resize -buffer-name=mixed file_rec/async buffer file_mru bookmark<cr><c-u>
       nnoremap <silent> [unite]f :<C-u>Unite -toggle -auto-resize -buffer-name=files file<cr><c-u>
       nnoremap <silent> [unite]F :<C-u>Unite -toggle -auto-resize -buffer-name=files file_rec/async<cr><c-u>
       nnoremap <silent> [unite]r :<C-u>Unite -toggle -auto-resize -buffer-name=file_mru file_mru<cr><c-u>
