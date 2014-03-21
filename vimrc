@@ -1315,6 +1315,8 @@
   nmap <leader>f$ :call StripTrailingWhitespace()<CR>
   nmap <leader>j :%! python -m json.tool<CR>
   vmap <leader>s :sort<cr>
+  vmap v <Plug>(expand_region_expand)
+  vmap <C-v> <Plug>(expand_region_shrink)
 
   nnoremap <leader>w :w<cr>
 
