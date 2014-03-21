@@ -409,6 +409,7 @@
   if count(s:settings.plugin_groups, 'scm') "{{{
     NeoBundle 'mhinz/vim-signify' "{{{
       let g:signify_update_on_bufenter=0
+      let g:signify_vcs_list = [ 'git', 'hg' ]
     "}}}
     if executable('hg')
       NeoBundle 'bitbucket:ludovicchabant/vim-lawrencium'
