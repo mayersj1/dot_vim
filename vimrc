@@ -1473,6 +1473,7 @@
     autocmd FileType python setlocal foldmethod=indent tabstop=8 expandtab shiftwidth=4 softtabstop=4
     autocmd FileType markdown setlocal nolist
     autocmd FileType vo_base setlocal nonumber
+    autocmd FileType make setlocal noexpandtab
     autocmd FileType vim setlocal foldmethod=marker keywordprg=:help
     autocmd FileWritePre    * :call StripTrailingWhitespace()
     autocmd FileAppendPre   * :call StripTrailingWhitespace()
