@@ -625,7 +625,7 @@
     "}}}
   endif "}}}
   if count(s:settings.plugin_groups, 'unite') "{{{
-    NeoBundle "Shougo/neomru.vim"
+    NeoBundle 'Shougo/neomru.vim'
     NeoBundle 'Shougo/unite.vim' "{{{
       let bundle = neobundle#get('unite.vim')
       function! bundle.hooks.on_source(bundle)
@@ -691,6 +691,7 @@
     NeoBundleLazy 'Shougo/unite-outline', {'autoload':{'unite_sources':'outline'}} "{{{
       nnoremap <silent> [unite]o :<C-u>Unite -auto-resize -buffer-name=outline outline<cr>
     "}}}
+    NeoBundle 'Shougo/unite-help.git'
     nnoremap <silent> [unite]h :<C-u>Unite -auto-resize -buffer-name=help help<cr>
     NeoBundleLazy 'Shougo/junkfile.vim', {'autoload':{'commands':'JunkfileOpen','unite_sources':['junkfile','junkfile/new']}} "{{{
       let g:junkfile#directory=expand("~/.vim/.cache/junk")
@@ -1302,7 +1303,8 @@
     NeoBundle 'myusuf3/numbers.vim'
     NeoBundle 'sjl/splice.vim'
     NeoBundle 'tpope/vim-characterize'
-    NeoBundle 'gcmt/wildfire.vim'
+    "NeoBundle 'gcmt/wildfire.vim'
+    NeoBundle 'Shougo/wildfire.vim'
     NeoBundle 'laurentgoudet/vim-howdoi'
     NeoBundle 't9md/vim-chef'
     NeoBundleLazy 'dag/vim-fish', {'autoload':{'filetypes':['fish']}}
