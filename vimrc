@@ -378,13 +378,13 @@
     NeoBundle 'tpope/vim-surround'
     NeoBundle 'tpope/vim-repeat'
     NeoBundle 'tpope/vim-dispatch'
-    NeoBundle 'tpope/vim-eunuch'
     NeoBundle 'tpope/vim-unimpaired' "{{{
       nmap <c-up> [e
       nmap <c-down> ]e
       vmap <c-up> [egv
       vmap <c-down> ]egv
     "}}}
+    NeoBundle 'tpope/vim-eunuch'
     NeoBundle 'Shougo/vimproc.vim', {
       \ 'build': {
         \ 'mac': 'make -f make_mac.mak',
@@ -459,13 +459,13 @@
     "}}}
   endif "}}}
   if count(s:settings.plugin_groups, 'scm') "{{{
+    if executable('hg')
+      NeoBundle 'bitbucket:ludovicchabant/vim-lawrencium'
+    endif
     NeoBundle 'mhinz/vim-signify' "{{{
       let g:signify_update_on_bufenter=0
       let g:signify_vcs_list = [ 'git', 'hg' ]
     "}}}
-    if executable('hg')
-      NeoBundle 'bitbucket:ludovicchabant/vim-lawrencium'
-    endif
     NeoBundle 'tpope/vim-fugitive' "{{{
       nnoremap <silent> <leader>gs :Gstatus<CR>
       nnoremap <silent> <leader>gd :Gdiff<CR>
@@ -691,8 +691,9 @@
     NeoBundleLazy 'Shougo/unite-outline', {'autoload':{'unite_sources':'outline'}} "{{{
       nnoremap <silent> [unite]o :<C-u>Unite -auto-resize -buffer-name=outline outline<cr>
     "}}}
-    NeoBundle 'Shougo/unite-help.git'
-    nnoremap <silent> [unite]h :<C-u>Unite -auto-resize -buffer-name=help help<cr>
+    NeoBundleLazy 'Shougo/unite-help.git', {'autoload':{'unite_sources':'help'}} "{{{
+      nnoremap <silent> [unite]h :<C-u>Unite -auto-resize -buffer-name=help help<cr>
+    "}}}
     NeoBundleLazy 'Shougo/junkfile.vim', {'autoload':{'commands':'JunkfileOpen','unite_sources':['junkfile','junkfile/new']}} "{{{
       let g:junkfile#directory=expand("~/.vim/.cache/junk")
       nnoremap <silent> [unite]j :<C-u>Unite -auto-resize -buffer-name=junk junkfile junkfile/new<cr>
@@ -1303,7 +1304,6 @@
     NeoBundle 'myusuf3/numbers.vim'
     NeoBundle 'sjl/splice.vim'
     NeoBundle 'tpope/vim-characterize'
-    "NeoBundle 'gcmt/wildfire.vim'
     NeoBundle 'Shougo/wildfire.vim'
     NeoBundle 'laurentgoudet/vim-howdoi'
     NeoBundle 't9md/vim-chef'
