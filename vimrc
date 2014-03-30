@@ -1371,6 +1371,7 @@
   vmap <leader>s :sort<cr>
   vmap v <Plug>(expand_region_expand)
   vmap <C-v> <Plug>(expand_region_shrink)
+  map <LocalLeader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 
   nnoremap <leader>w :w<cr>
 
