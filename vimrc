@@ -567,11 +567,6 @@
     NeoBundle 'rking/ag.vim' "{{{
       let g:agprg="/usr/local/bin/ag --column"
     "}}}
-    " DISABLED::NeoBundleLazy 'mbbill/undotree', {'autoload':{'commands':'UndotreeToggle'}} "{{{
-    "   let g:undotree_SplitLocation='botright'
-    "   let g:undotree_SetFocusWhenToggle=1
-    "   nnoremap <silent> <F5> :UndotreeToggle<CR>
-    " "}}}
     NeoBundleLazy 'sjl/gundo.vim', {'autoload':{'commands':'GundoToggle'}} "{{{
       let g:gundo_right=1
       nnoremap <silent> <F5> :GundoToggle<CR>
@@ -581,31 +576,6 @@
       let g:EasyGrepAllOptionsInExplorer=1
       let g:EasyGrepCommand=1
       nnoremap <leader>vo :GrepOptions<cr>
-    "}}}
-    NeoBundle 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
-
-      let g:ctrlp_clear_cache_on_exit=1
-      let g:ctrlp_max_height=40
-      let g:ctrlp_show_hidden=0
-      let g:ctrlp_follow_symlinks=1
-      let g:ctrlp_working_path_mode=0
-      let g:ctrlp_max_files=20000
-      let g:ctrlp_cache_dir='~/.vim/.cache/ctrlp'
-      let g:ctrlp_reuse_window='startify'
-      let g:ctrlp_extensions=['funky']
-      if executable('ag')
-        let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
-      endif
-
-      nmap <Leader>p [ctrlp]
-      nnoremap [ctrlp] <nop>
-
-      nnoremap [ctrlp]p :CtrlPMRU<cr>
-      nnoremap [ctrlp]t :CtrlPBufTag<cr>
-      nnoremap [ctrlp]T :CtrlPTag<cr>
-      nnoremap [ctrlp]l :CtrlPLine<cr>
-      nnoremap [ctrlp]o :CtrlPFunky<cr>
-      nnoremap [ctrlp]b :CtrlPBuffer<cr>
     "}}}
     NeoBundleLazy 'scrooloose/nerdtree', {'autoload':{'commands':['NERDTreeToggle','NERDTreeFind']}} "{{{
       let NERDTreeShowHidden=1
@@ -1294,7 +1264,7 @@
     NeoBundle 'chrisbra/vim_faq'
     NeoBundle 'vimwiki'
     NeoBundle 'bufkill.vim'
-    NeoBundle 'vim-scripts/perl-support.vim'
+    NeoBundleLazy 'vim-scripts/perl-support.vim', {'autoload':{'filetypes':['perl']}}
     NeoBundle 'chrisbra/csv.vim'
     NeoBundle 'junegunn/goyo.vim'
     NeoBundle 'amix/vim-zenroom2'
