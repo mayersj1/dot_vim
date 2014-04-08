@@ -385,6 +385,7 @@
       vmap <c-down> ]egv
     "}}}
     NeoBundle 'tpope/vim-eunuch'
+    NeoBundle 'vim-scripts/clone'
     NeoBundle 'Shougo/vimproc.vim', {
       \ 'build': {
         \ 'mac': 'make -f make_mac.mak',
