@@ -376,6 +376,7 @@
       "}}}
     endif "}}}
     NeoBundle 'tpope/vim-surround'
+    NeoBundle 'wellle/targets.vim'
     NeoBundle 'tpope/vim-repeat'
     NeoBundle 'tpope/vim-dispatch'
     NeoBundle 'tpope/vim-unimpaired' "{{{
