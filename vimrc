@@ -364,6 +364,7 @@
       let g:airline#extensions#tabline#left_alt_sep = '⮁'
     "}}}
     if exists('$TMUX') "{{{
+      NeoBundle 'wellle/tmux-complete.vim'
       NeoBundle 'edkolev/tmuxline.vim' "{{{
         let g:tmuxline_preset = 'full'
         let g:tmuxline_separators = {
