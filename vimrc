@@ -364,7 +364,6 @@
       let g:airline#extensions#tabline#left_alt_sep = '⮁'
     "}}}
     if exists('$TMUX') "{{{
-      NeoBundle 'wellle/tmux-complete.vim'
       NeoBundle 'edkolev/tmuxline.vim' "{{{
         let g:tmuxline_preset = 'full'
         let g:tmuxline_separators = {
@@ -491,6 +490,9 @@
   endif "}}}
   if count(s:settings.plugin_groups, 'autocomplete') "{{{
     NeoBundle 'honza/vim-snippets'
+    if exists('$TMUX') "{{{
+      NeoBundle 'wellle/tmux-complete.vim'
+    endif "}}}
     if s:settings.autocomplete_method == 'ycm' "{{{
       NeoBundle 'Valloric/YouCompleteMe', {'vim_version':'7.3.584',
             \ 'build' : {
@@ -1501,6 +1503,7 @@
     autocmd FileType vo_base setlocal nonumber
     autocmd FileType make setlocal noexpandtab
     autocmd FileType vim setlocal foldmethod=marker keywordprg=:help
+    autocmd FileType * if &completefunc != '' | let &omnifunc=&completefunc | endif
     autocmd FileWritePre    * :call StripTrailingWhitespace()
     autocmd FileAppendPre   * :call StripTrailingWhitespace()
     autocmd FilterWritePre  * :call StripTrailingWhitespace()
