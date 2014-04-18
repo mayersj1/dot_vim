@@ -376,6 +376,10 @@
       "}}}
     endif "}}}
     NeoBundle 'tpope/vim-surround'
+    NeoBundle 'dhruvasagar/vim-vinegar'
+    NeoBundle 'chrisbra/unicode.vim' "{{{
+     nnoremap <F8> <Plug>(MakeDigraph)
+    "}}}
     NeoBundle 'wellle/targets.vim'
     NeoBundle 'tpope/vim-repeat'
     NeoBundle 'tpope/vim-dispatch'
@@ -1279,13 +1283,13 @@
     NeoBundle 'regedarek/ZoomWin'
     NeoBundle 'myusuf3/numbers.vim'
     NeoBundle 'sjl/splice.vim'
-    NeoBundle 'tpope/vim-characterize'
+    "NeoBundle 'tpope/vim-characterize'
     NeoBundle 'Shougo/wildfire.vim'
     NeoBundle 'laurentgoudet/vim-howdoi'
     NeoBundle 't9md/vim-chef'
     NeoBundleLazy 'dag/vim-fish', {'autoload':{'filetypes':['fish']}}
     NeoBundle 't9md/vim-choosewin' "{{{
-      nmap  -  <Plug>(choosewin)
+      nmap  <leader>w  <Plug>(choosewin)
       let g:choosewin_overlay_enable = 1
     "}}}
     NeoBundle 'fmoralesc/vim-pad' "{{{
