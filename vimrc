@@ -380,6 +380,7 @@
     NeoBundle 'chrisbra/unicode.vim' "{{{
      nnoremap <F8> <Plug>(MakeDigraph)
     "}}}
+    NeoBundle 'chrisbra/SudoEdit.vim'
     NeoBundle 'wellle/targets.vim'
     NeoBundle 'tpope/vim-repeat'
     NeoBundle 'tpope/vim-dispatch'
