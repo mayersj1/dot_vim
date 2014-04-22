@@ -376,6 +376,7 @@
       "}}}
     endif "}}}
     NeoBundle 'tpope/vim-surround'
+    NeoBundle 'tpope/vim-obsession'
     NeoBundle 'chrisbra/unicode.vim' "{{{
      nnoremap <F8> <Plug>(MakeDigraph)
     "}}}
