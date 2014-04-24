@@ -1278,13 +1278,12 @@
     NeoBundleLazy 'vim-scripts/perl-support.vim', {'autoload':{'filetypes':['perl']}}
     NeoBundle 'chrisbra/csv.vim'
     NeoBundle 'junegunn/goyo.vim'
-    NeoBundle 'amix/vim-zenroom2'
+    "NeoBundle 'amix/vim-zenroom2'
     NeoBundleLazy 'vimoutliner/vimoutliner', {'autoload':{'filetypes':['vo_base']}}
     NeoBundle 'vim-scripts/DrawIt'
     NeoBundle 'regedarek/ZoomWin'
     NeoBundle 'myusuf3/numbers.vim'
     NeoBundle 'sjl/splice.vim'
-    "NeoBundle 'tpope/vim-characterize'
     NeoBundle 'Shougo/wildfire.vim'
     NeoBundle 'laurentgoudet/vim-howdoi'
     NeoBundle 't9md/vim-chef'
