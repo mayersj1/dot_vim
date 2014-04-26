@@ -177,6 +177,7 @@
   set mouse=a                                         "enable mouse
   set mousehide                                       "hide when characters are typed
   set history=1000                                    "number of command lines to remember
+  set title                                           "sets window title"
   set ttyfast                                         "assume fast terminal connection
   set viewoptions=folds,options,cursor,unix,slash     "unix/windows compatibility
   set encoding=utf-8                                  "set encoding for text
