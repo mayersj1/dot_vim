@@ -393,6 +393,7 @@
     "}}}
     NeoBundle 'tpope/vim-eunuch'
     NeoBundle 'vim-scripts/clone'
+    NeoBundle 'mattboehm/vim-unstack'
     NeoBundle 'Shougo/vimproc.vim', {
       \ 'build': {
         \ 'mac': 'make -f make_mac.mak',
