@@ -1280,7 +1280,7 @@
     NeoBundleLazy 'vim-scripts/perl-support.vim', {'autoload':{'filetypes':['perl']}}
     NeoBundle 'chrisbra/csv.vim'
     NeoBundle 'junegunn/goyo.vim'
-    "NeoBundle 'amix/vim-zenroom2'
+    NeoBundle 'amix/vim-zenroom2'
     NeoBundleLazy 'vimoutliner/vimoutliner', {'autoload':{'filetypes':['vo_base']}}
     NeoBundle 'vim-scripts/DrawIt'
     NeoBundle 'regedarek/ZoomWin'
@@ -1375,9 +1375,6 @@
   inoremap <C-l> <right>
 
   inoremap <C-u> <C-g>u<C-u>
-
-  " Mappings for VisualDrag plugin
-  runtime plugin/dragvisuals.vim
 
   vmap  <expr>  <S-left>   DVB_Drag('left')
   vmap  <expr>  <S-right>  DVB_Drag('right')
