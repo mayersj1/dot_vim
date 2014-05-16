@@ -1294,8 +1294,8 @@
       nmap  <leader>w  <Plug>(choosewin)
       let g:choosewin_overlay_enable = 1
     "}}}
-    NeoBundle 'fmoralesc/vim-pad' "{{{
-      let g:pad_dir = "~/Dropbox/Notational Data"
+    NeoBundle 'vim-scripts/vim-pad' "{{{
+      let g:pad_dir = "~/Dropbox/Notational\ Data"
       let g:pad_use_default_mappings = 0
       let g:pad_search_backend = 'ack'
       let g:pad_open_in_split = 0
