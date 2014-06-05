@@ -382,7 +382,8 @@
      nnoremap <F8> <Plug>(MakeDigraph)
     "}}}
     NeoBundle 'chrisbra/SudoEdit.vim'
-    NeoBundle 'wellle/targets.vim'
+    " NeoBundle 'wellle/targets.vim'
+    NeoBundle 'paradigm/TextObjectify'
     NeoBundle 'tpope/vim-repeat'
     NeoBundle 'tpope/vim-dispatch'
     NeoBundle 'tpope/vim-unimpaired' "{{{
