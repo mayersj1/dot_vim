@@ -428,13 +428,13 @@
     "}}}
   endif "}}}
   if count(s:settings.plugin_groups, 'javascript') "{{{
-    NeoBundleLazy 'marijnh/tern_for_vim', {
-      \ 'autoload': { 'filetypes': ['javascript'] },
-      \ 'build': {
-        \ 'mac': 'npm install',
-        \ 'unix': 'npm install',
-      \ },
-    \ }
+    " NeoBundleLazy 'marijnh/tern_for_vim', {
+    "   \ 'autoload': { 'filetypes': ['javascript'] },
+    "   \ 'build': {
+    "     \ 'mac': 'npm install',
+    "     \ 'unix': 'npm install',
+    "   \ },
+    " \ }
     NeoBundleLazy 'pangloss/vim-javascript', {'autoload':{'filetypes':['javascript']}}
     NeoBundleLazy 'maksimr/vim-jsbeautify', {'autoload':{'filetypes':['javascript']}} "{{{
       nnoremap <leader>fjs :call JsBeautify()<cr>
