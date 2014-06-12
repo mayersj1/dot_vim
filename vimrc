@@ -495,7 +495,8 @@
       nnoremap <silent> <leader>gv :Gitv<CR>
       nnoremap <silent> <leader>gV :Gitv!<CR>
     "}}}
-    NeoBundleLazy 'idanarye/vim-merginal', {'depends':['tpope/vim-fugitive'], 'autoload':{'commands':'Merginal'}}
+    NeoBundle 'idanarye/vim-merginal'
+    NeoBundle 'int3/vim-extradite'
   endif "}}}
   if count(s:settings.plugin_groups, 'autocomplete') "{{{
     NeoBundle 'honza/vim-snippets'
