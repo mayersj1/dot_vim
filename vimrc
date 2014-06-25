@@ -1283,7 +1283,7 @@
     NeoBundleLazy 'vim-scripts/perl-support.vim', {'autoload':{'filetypes':['perl']}}
     NeoBundle 'chrisbra/csv.vim'
     NeoBundle 'junegunn/goyo.vim'
-    NeoBundle 'amix/vim-zenroom2'
+    NeoBundleLazy 'amix/vim-zenroom2', {'autoload':{'commands':'Goyo'}}
     NeoBundleLazy 'vimoutliner/vimoutliner', {'autoload':{'filetypes':['vo_base']}}
     NeoBundle 'vim-scripts/DrawIt'
     NeoBundle 'regedarek/ZoomWin'
