@@ -451,8 +451,10 @@
     NeoBundle 'tpope/vim-bundler'
   endif "}}}
   if count(s:settings.plugin_groups, 'python') "{{{
-    NeoBundleLazy 'klen/python-mode', {'autoload':{'filetypes':['python']}} "{{{
+    NeoBundle 'klen/python-mode' "{{{
       let g:pymode_rope = 0
+      let g:pymode_rope_lookup_project = 0
+      let g:pymode_rope_complete_on_dot = 0
       let g:pymode_lint = 1
       let g:pymode_lint_ignore = "E501,C0301,C0302,C0110,C1001"
       let g:pymode_lint_checkers = ['pyflakes', 'pep8']
@@ -464,7 +466,7 @@
       let g:pymode_syntax_space_errors = g:pymode_syntax_all
       let g:pymode_folding = 0
     "}}}
-    NeoBundleLazy 'davidhalter/jedi-vim', {'autoload':{'filetypes':['python']}} "{{{
+    NeoBundle 'davidhalter/jedi-vim' "{{{
       let g:jedi#popup_on_dot=0
     "}}}
   endif "}}}
