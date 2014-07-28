@@ -503,8 +503,8 @@
   if count(s:settings.plugin_groups, 'autocomplete') "{{{
     NeoBundle 'honza/vim-snippets'
     if exists('$TMUX') "{{{
-      NeoBundle 'wellle/tmux-complete.vim'
-      let g:tmuxcomplete#trigger = ''
+      "NeoBundle 'wellle/tmux-complete.vim'
+      "let g:tmuxcomplete#trigger = ''
     endif "}}}
     if s:settings.autocomplete_method == 'ycm' "{{{
       NeoBundle 'Valloric/YouCompleteMe', {'vim_version':'7.3.584',
