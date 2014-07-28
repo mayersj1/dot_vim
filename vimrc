@@ -559,7 +559,7 @@
     NeoBundle 'tpope/vim-speeddating'
     NeoBundle 'thinca/vim-visualstar'
     NeoBundle 'tomtom/tcomment_vim'
-    NeoBundle 'terryma/vim-expand-region'
+    "NeoBundle 'terryma/vim-expand-region'
     NeoBundle 'terryma/vim-multiple-cursors'
     NeoBundle 'chrisbra/NrrwRgn'
     NeoBundleLazy 'godlygeek/tabular', {'autoload':{'commands':'Tabularize'}} "{{{
@@ -1291,7 +1291,7 @@
     NeoBundle 'regedarek/ZoomWin'
     NeoBundle 'myusuf3/numbers.vim'
     NeoBundle 'sjl/splice.vim'
-    NeoBundle 'Shougo/wildfire.vim'
+    NeoBundle 'gcmt/wildfire.vim'
     NeoBundle 'laurentgoudet/vim-howdoi'
     NeoBundle 't9md/vim-chef'
     NeoBundleLazy 'dag/vim-fish', {'autoload':{'filetypes':['fish']}}
