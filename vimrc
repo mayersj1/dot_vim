@@ -1289,7 +1289,7 @@
     NeoBundleLazy 'vimoutliner/vimoutliner', {'autoload':{'filetypes':['vo_base']}}
     NeoBundle 'vim-scripts/DrawIt'
     NeoBundle 'regedarek/ZoomWin'
-    NeoBundle 'myusuf5/numbers.vim'
+    NeoBundle 'myusuf3/numbers.vim'
     NeoBundle 'sjl/splice.vim'
     NeoBundle 'gcmt/wildfire.vim'
     NeoBundle 'laurentgoudet/vim-howdoi'
