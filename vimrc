@@ -1300,7 +1300,7 @@
       let g:notes_directories = ['~/Dropbox/Notational Data']
       let g:notes_suffix = '.txt'
       let g:notes_word_boundaries = 1
-      let g:notes_title_sync = 'no'
+      let g:notes_title_sync = 'change_title'
     "}}}
     NeoBundleLazy 'dag/vim-fish', {'autoload':{'filetypes':['fish']}}
     NeoBundle 't9md/vim-choosewin' "{{{
