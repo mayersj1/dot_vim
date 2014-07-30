@@ -455,6 +455,7 @@
       let g:pymode_rope = 0
       let g:pymode_rope_lookup_project = 0
       let g:pymode_rope_complete_on_dot = 0
+      let g:pymode_rope_completion = 0
       let g:pymode_lint = 1
       let g:pymode_lint_ignore = "E501,C0301,C0302,C0110,C1001"
       let g:pymode_lint_checkers = ['pyflakes', 'pep8']
