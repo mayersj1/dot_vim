@@ -1289,11 +1289,18 @@
     NeoBundleLazy 'vimoutliner/vimoutliner', {'autoload':{'filetypes':['vo_base']}}
     NeoBundle 'vim-scripts/DrawIt'
     NeoBundle 'regedarek/ZoomWin'
-    NeoBundle 'myusuf3/numbers.vim'
+    NeoBundle 'myusuf5/numbers.vim'
     NeoBundle 'sjl/splice.vim'
     NeoBundle 'gcmt/wildfire.vim'
     NeoBundle 'laurentgoudet/vim-howdoi'
     NeoBundle 't9md/vim-chef'
+    NeoBundle 'xolox/vim-misc'
+    NeoBundle 'xolox/vim-notes' "{{{
+      let g:notes_directories = ['~/Dropbox/Notational Data']
+      let g:notes_suffix = '.txt'
+      let g:notes_word_boundaries = 1
+      let g:notes_title_sync = 'no'
+    "}}}
     NeoBundleLazy 'dag/vim-fish', {'autoload':{'filetypes':['fish']}}
     NeoBundle 't9md/vim-choosewin' "{{{
       nmap  <leader>w  <Plug>(choosewin)
