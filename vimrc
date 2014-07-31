@@ -467,8 +467,8 @@
       let g:pymode_syntax_space_errors = g:pymode_syntax_all
       let g:pymode_folding = 0
     "}}}
-    NeoBundle 'davidhalter/jedi-vim' "{{{
-      let g:jedi#popup_on_dot=0
+    "NeoBundle 'davidhalter/jedi-vim' "{{{
+      "let g:jedi#popup_on_dot=0
     "}}}
   endif "}}}
   if count(s:settings.plugin_groups, 'scm') "{{{
