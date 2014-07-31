@@ -467,9 +467,6 @@
       let g:pymode_syntax_space_errors = g:pymode_syntax_all
       let g:pymode_folding = 0
     "}}}
-    "NeoBundle 'davidhalter/jedi-vim' "{{{
-      "let g:jedi#popup_on_dot=0
-    "}}}
   endif "}}}
   if count(s:settings.plugin_groups, 'scm') "{{{
     if executable('hg')
@@ -560,7 +557,6 @@
     NeoBundle 'tpope/vim-speeddating'
     NeoBundle 'thinca/vim-visualstar'
     NeoBundle 'tomtom/tcomment_vim'
-    "NeoBundle 'terryma/vim-expand-region'
     NeoBundle 'terryma/vim-multiple-cursors'
     NeoBundle 'chrisbra/NrrwRgn'
     NeoBundleLazy 'godlygeek/tabular', {'autoload':{'commands':'Tabularize'}} "{{{
