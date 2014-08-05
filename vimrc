@@ -1299,6 +1299,7 @@
       let g:notes_title_sync = 'change_title'
     "}}}
     NeoBundleLazy 'dag/vim-fish', {'autoload':{'filetypes':['fish']}}
+    NeoBundle 'wesQ3/vim-windowswap'
     NeoBundle 't9md/vim-choosewin' "{{{
       nmap  <leader>w  <Plug>(choosewin)
       let g:choosewin_overlay_enable = 1
