@@ -76,7 +76,7 @@
   set nocompatible
   set all& "reset everything to their defaults
   set rtp+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundleFetch 'Shougo/neobundle.vim'
 "}}}
 
@@ -1546,7 +1546,6 @@
     let g:kolor_underlined=1
   "}}}
 
-  exec 'colorscheme '.s:settings.colorscheme
 "}}}
 
 " finish loading {{{
@@ -1556,6 +1555,8 @@
     endfor
   endif
 
+  call neobundle#end()
+  exec 'colorscheme '.s:settings.colorscheme
   filetype plugin indent on
   syntax enable
   NeoBundleCheck
